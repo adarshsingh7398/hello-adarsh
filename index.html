@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Study Project</title>
+   <style>
+      body {
+         background-image: url('image/download (5).jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         /* Ensure the image covers the whole background */
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #f4f4f4;
+      }
+
+      header {
+         color: rgb(216, 206, 206);
+         padding: 10px 0;
+         text-align: center;
+      }
+
+      nav ul {
+         list-style-type: none;
+         padding: 0;
+         margin: 0;
+         display: flex;
+         justify-content: center;
+      }
+
+      nav ul li {
+         margin: 0 15px;
+      }
+
+      nav ul li a {
+         color: white;
+         text-decoration: none;
+         font-weight: bold;
+         border-radius: 5px;
+         padding: 5px 10px;
+         background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      nav ul li a:hover {
+         background-color: #4CAF50;
+         transition: 0.3s;
+      }
+
+      form {
+         background-color: white;
+         padding: 20px;
+         margin: 20px auto;
+         max-width: 400px;
+         border-radius: 8px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      form h1 {
+         text-align: center;
+         color: #333;
+      }
+
+      label, input, select, textarea {
+         display: block;
+         width: 100%;
+         margin-bottom: 10px;
+      }
+
+      input[type="text"], input[type="password"], input[type="date"], select, textarea {
+         padding: 8px;
+         border-radius: 4px;
+         border: 1px solid #ccc;
+      }
+
+      button {
+         padding: 10px;
+         width: 100%;
+         background-color: #4CAF50;
+         color: white;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+      }
+
+      button:hover {
+         background-color: #45a049;
+      }
+
+      #READY-FOR-STUDY img {
+         width: 200px;
+         height: 150px;
+         margin: 10px;
+         border-radius: 8px;
+      }
+
+      #READY-FOR-STUDY {
+         background-image: url('image/download (4).jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         padding: 20px;
+      }
+
+      .btn {
+         border: none;
+         padding: 10px 20px;
+         margin: 10px;
+         /* background-color: #4CAF50; */
+         color: rgb(229, 221, 221);
+         border-radius: 100px solid black;
+         cursor: pointer;
+         /* border-radius: 5px; */
+
+
+
+      }
+
+      .btn:hover {
+         background-color: #181918;
+      }
+
+      footer {
+         text-align: center;
+         padding: 10px;
+         background-color: #4CAF50;
+         color: white;
+         position: relative;
+         bottom: 0;
+         width: 100%;
+      }
+
+      #CONTACT-US h1, #CONTACT-US p {
+         text-align: center;
+      }
+
+      #CONTACT-US {
+         background-image: url('image/download (4).jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         padding: 20px;
+         border-radius: 8px;
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <nav>
+         <h1>WELCOME ADARSH SINGH PATHSHALA</h1>
+         <ul>
+            <li><a href="#HOME">HOME</a></li>
+            <li><a href="#CONTACT-US">CONTACT US</a></li>
+            <li><a href="#READY-FOR-STUDY">READY FOR STUDY</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <section id="HOME">
+      <form action="action_page.php">
+         <h1>REGISTRATION FORM</h1>
+         <p>Fill out the form below to register as a <em>STUDENT</em>.</p>
+
+         <label for="name">Enter the name:</label>
+         <input type="text" placeholder="Enter name" id="name" name="name" required><br>
+
+         <label for="password">Enter the password:</label>
+         <input type="password" placeholder="Enter password" id="password" name="password" required><br>
+
+         <label for="dob">Enter DOB:</label>
+         <input type="date" id="dob" name="dob" required><br>
+
+         <label for="subject">SELECT COURSE FOR BEGINNER:</label>
+         <select id="subject" name="subject">
+            <option value="javascript">JavaScript</option>
+            <option value="python">Database Developer</option>
+            <option value="dbms">Database</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+         </select><br>
+
+         <button type="submit">Login</button>
+         <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+         </label><br>
+
+         <button type="button" class="cancelbtn">Cancel</button>
+         <span class="psw">Forgot <a href="#">password?</a></span>
+      </form>
+   </section>
+
+   <section id="CONTACT-US">
+      <h1>CONTACT COURSE ENQUIRIES</h1>
+      <p>Hello everyone, Adarsh Singh Pathshala here! Enroll in my course and enjoy.</p>
+      <form action="action_page.php">
+         <label for="fname">First Name:</label>
+         <input type="text" id="fname" name="firstname" placeholder="Your name.." required><br>
+
+         <label for="lname">Last Name:</label>
+         <input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br>
+
+         <label for="country">Select Country:</label><br>
+         <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="england">England</option>
+            <option value="dubai">Dubai</option>
+            <option value="india">India</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="usa">USA</option>
+         </select><br>
+
+         <label for="subject">Subject:</label><br>
+         <textarea id="subject" name="subject" placeholder="Write something..." style="height:100px; width:100%;"></textarea><br>
+
+         <input type="submit" value="Submit">
+      </form>
+   </section>
+
+   <section id="READY-FOR-STUDY" style="text-align: center;">
+      <h1>ENJOY AND HAPPINESS WITH A COOL MIND STUDY</h1>
+      <p>Best Portal in the World</p>
+
+      <img src="image/download (3).png" alt="Study Image 1"><br>
+      <button type="button" class="btn">Enroll now</button><br>
+
+      <img src="image/download (1).jpg" alt="Study Image 2"><br>
+      <button type="button" class="btn">Enroll now</button><br>
+
+      <img src="image/download (3).jpg" alt="Study Image 3"><br>
+      <button type="button" class="btn">Enroll now</button><br>
+
+      <img src="image/download (2).jpg" alt="Study Image 4"><br>
+      <button type="button" class="btn">Enroll now</button><br>
+   </section>
+
+   <footer>
+      <p>Company established in 2024, study platform.</p>
+   </footer>
+</body>
+
+</html>
